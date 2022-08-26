@@ -19,5 +19,10 @@ lista = [jogo1, jogo2, jogo3]
 @app.route('/')
 def ola():
     return render_template('lista.html',titulo='Meus Jogos', jogos=lista)
+  
+@app.route('/novo')
+def novo():
+  return render_template('novo.html')
 
 app.run(host='0.0.0.0', port=81, debug=True)
+
