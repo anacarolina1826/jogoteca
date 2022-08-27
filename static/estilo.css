@@ -1,3 +1,22 @@
+form{
+  color:#9c31ff;
+  border: 2px solid darkred;
+  border-radius:5px;
+  text-align:justify;
+  background-color:#ffff99;
+;
+  width:400px;
+  display: inline-block;
+  
+  
+}
 h1{
-  color:red;
+   font-family:'Baloo 2', cursive;
+   font-weight:normal;
+  color: darkviolet;
+   text-shadow: 7px 7px 18px yellow;
+}
+
+body{
+  background-color:white;
 }
