@@ -1,0 +1,23 @@
+h1{
+  font-weight:normal;
+  color:#66D2D6;
+  
+}
+
+table,td{
+  background-color:lightyellow;
+  font-weight:bold;
+  color:gold;
+  
+}
+
+th{
+  color:hotpink;
+  font-weight:normal;
+  font-size:20px;
+  padding:15px;
+}
+body{
+  color:#ffff99;
+}
+
