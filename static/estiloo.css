@@ -4,10 +4,10 @@ h1{
   
 }
 
-table,td{
+#table td{
   background-color:lightyellow;
   font-weight:bold;
-  color:gold;
+  color:black ;
   
 }
 
