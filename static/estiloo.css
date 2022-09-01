@@ -4,20 +4,17 @@ h1{
   
 }
 
-#table td{
+#table{
   background-color:lightyellow;
-  font-weight:bold;
+  font-weight:light;
   color:black ;
   
 }
 
 th{
   color:hotpink;
-  font-weight:normal;
   font-size:20px;
   padding:15px;
 }
-body{
-  color:#ffff99;
-}
+
 
