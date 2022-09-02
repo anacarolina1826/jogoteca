@@ -6,26 +6,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jogo.css') }}">
   </head>
-<body class="d - flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
 
   <header class="page-header">
    
     <div class="cabecalho">
       <h1 class="display-2">JOGOTECA</h1>
-     
+    </div>
+    </header>
+    
   <main class="container">
     <ul class="nav">
       <a href="/" class="nav-link">inicio</a>
       <a href="#" class="nav-link">Sobre</a>
       <a href="#" class="nav-link">Contato</a>
     </ul>
-  </main>
-    </div>
-  </header>
-   
-   
+
     {% block conteudo %}
     {% endblock %}
+  </main>
+  
+
+   
+   
+
   <footer class="mt-auto bg-light text-muted">
     <section class="p-4 d-flex justify-content-center justify-content-between">
       <div class="me-5">
