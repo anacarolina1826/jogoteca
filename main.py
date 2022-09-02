@@ -13,6 +13,7 @@ jogo3=jogo('Minecraft', 'construção','PC')
 
 
 app = Flask(__name__)
+app.secrety_key='ifmg'
 
 lista = [jogo1, jogo2, jogo3]
 
@@ -49,7 +50,8 @@ def login():
     else:
       session['usuario_email'] = usuario.email
       session['usuario_nome'] = usuario.nome
-      return render_template('login.html')
+      
+  return render_template('login.html')
 
 @app.route('/logout', methods=['POST'])
 def logout():

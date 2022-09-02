@@ -1,20 +1,20 @@
-h1{
-  font-weight:normal;
-  color:#66D2D6;
+header{
+  background-color: lightyellow;
+  color:#FF6961;/*color_name: pastel read*/
   
 }
-
-#table{
+#ta th{
   background-color:lightyellow;
-  font-weight:light;
-  color:black ;
+  font-weight:normal;
+  /*color:#FF1205*;*/
+  color:#AA26FF;
+  font-size:20px;
   
 }
-
-th{
-  color:hotpink;
+#ta{
+  background-color:lightyellow;
   font-size:20px;
-  padding:15px;
+  border: 4px solid lightgray;
 }
 
 

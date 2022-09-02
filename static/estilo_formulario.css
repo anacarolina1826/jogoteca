@@ -1,18 +1,16 @@
-h1{
-    text-align: center;
-   font-family:'Baloo 2', cursive;
-   font-weight:normal;
-  color:hotpink;
-   text-shadow: 7px 7px 18px yellow;
+header{
+  color:#FF6961;
+  background-color:lightyellow
+  
 }
 
 form{
   background-color:lightyellow;
   border: 4px solid lightgray;
-  border-radius:12px;
+  border-radius:30px;
   padding: 20px;
   width: 300px;
-  color:#66D2d6;
+  color:#AA26FF;
   font-weight:normal;
   font-size:20px;
   margin:auto;
@@ -21,7 +19,11 @@ form{
 
 input{
  border:2px;
+ border-radius:30px;
 border-color: black;
 border-style: solid;
-border-radius: 4px;
+}
+button{
+  background-color:lightyellow;
+  color:#AA26FF;
 }
