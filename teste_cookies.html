@@ -1,0 +1,13 @@
+<div class="float-end text-end mr-1 text-light">
+      {%if 'usuario_nome' in sension %}
+      <form action="{{url_for('logout')}}" method="post">
+      <div>ola, {{sension['usuario_nome']}}!
+      </div>
+      <button class="bnt bnt-link"> Sair</button>
+      </form>
+      {else%}
+      <div> <a href="{{url_for('login')}}"> login</a>
+        
+      </div>
+      <h1 class="display-1">Jogoteca</h1>
+   

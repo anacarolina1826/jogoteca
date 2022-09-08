@@ -1,3 +1,5 @@
+
+
 class Usuario:
   Def _init_(self, nome, email, senha)
     self.nome = Nome

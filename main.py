@@ -39,6 +39,7 @@ def criar():
 
 app.run(host='0.0.0.0', port=81, debug=True)
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   if request.method == 'POST':
