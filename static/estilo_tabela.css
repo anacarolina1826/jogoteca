@@ -1,5 +1,13 @@
+a:visited{
+  color:#AA26FF;
+}
+
+
+body{
+  background-color:#fdfddd;
+}
 header{
-  background-color: lightyellow;
+  background-image: linear-gradient(to top,lightyellow ,#fad1d1);  
   color:#FF6961;/*color_name: pastel read*/
   
 }
@@ -16,5 +24,7 @@ header{
   font-size:20px;
   border: 4px solid lightgray;
 }
-
+a:link{
+  color:green;
+}
 

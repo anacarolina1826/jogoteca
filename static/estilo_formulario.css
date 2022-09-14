@@ -1,8 +1,12 @@
+a:visited{
+  color:#AA26FF;
+}
+
 body{
   background-color: lightyellow;
 }
 header{
-  color:#FF6961;
+  color:#FF6961;/*color_name: pastel read*/
   background-image: linear-gradient(to top,lightyellow ,#fad1d1);  
 }
 
