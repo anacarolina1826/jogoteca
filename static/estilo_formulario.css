@@ -1,11 +1,12 @@
+body{
+  background-color: lightyellow;
+}
 header{
   color:#FF6961;
-  background-color:lightyellow
-  
+  background-image: linear-gradient(to top,lightyellow ,#fad1d1);  
 }
 
 form{
-  background-color:lightyellow;
   border: 4px solid lightgray;
   border-radius:30px;
   padding: 20px;
