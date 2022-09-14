@@ -14,8 +14,19 @@
   </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <header class="page-header">
-   
+  <header class="bg-dark bg-gradient p-3 text-light">
+    <div class="float-end text-end mr-1 text-light">
+      {% if 'usuario' in sension %}
+      <form action="{{url_for('login')}}" method="post">
+        <div>Olá, {{senssion ['usuario_nome']}}!
+    </div>
+        <button class="btn btn-link">sair</button>
+      </form>
+      {%else%}
+      <div> <a href="{{url_for('login')}}"> login </a> 
+      </div>
+      {% endif%}
+    </div> 
     <div class="cabecalho">
       
       <h1  class="display-2">JOGOTECA</h1>

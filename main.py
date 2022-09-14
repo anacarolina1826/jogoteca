@@ -52,9 +52,9 @@ def login():
 
 @app.route('/logout', methods=['POST'])
 def logout():
-  session.pop('usuario_email', None)
+  session.pop('usuario_email', None) #sension.pop ele retira as informações que está na sensão fazendo o logout 
   session.pop('usuario_nome', None)
   return redirect(url_for('index')) 
 
-#app.run coloca o sistema no ar, sendo a ultima linha do 
+#app.run coloca o sistema no ar, sendo a ultima linha do c
 app.run(host='0.0.0.0', port=81, debug=True)
