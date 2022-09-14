@@ -1,10 +1,7 @@
-header{
-  /*
-  background-image: linear-gradient(to top,lightyellow ,#fad1d1);*/  
-  color:#FF6961;/*color_name: pastel read*/
-
-  
+header{ 
+  color:#FF6961;/*color_name: pastel read*/  
 }
+
 #ta th{
   background-color:lightyellow;
   font-weight:normal;
@@ -31,7 +28,7 @@ a:visited{
 }
 
 body{
-  background-color:;
+  background-color:lightyellow;
 }
 
 

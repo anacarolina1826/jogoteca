@@ -33,7 +33,26 @@
     </div>
    </header>
     
-  <main class="container">
+  <main class="container mt-3">
+    <div class="page-header">
+      <h1>{{titulo}}</h1>
+    </div>
+    {% with mensagens= get_flashed_mensagens()%}
+    {%if mensagens%}
+    <ul class= "text-danger">
+      {%for mensagem in mensagens%}
+    <li>{{mensagem}}</li>
+      {{%endfor%}}
+    </ul>
+    {{% endif%}}
+    {{endwith}}
+
+    
+    {%block conteudo%}
+    
+    {%endblock%}
+  
+  
     <ul class="nav">
       {%block menu%}
       
