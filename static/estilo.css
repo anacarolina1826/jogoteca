@@ -1,9 +1,7 @@
-header{
-  color:#FF6961;
-  
-
-  
+header{ 
+  color:#FF6961;/*color_name: pastel read*/  
 }
+
 #ta th{
   background-color:lightyellow;
   font-weight:normal;
@@ -30,7 +28,7 @@ a:visited{
 }
 
 body{
-  background-color:;
+  background-color:lightyellow;
 }
 
 
@@ -55,7 +53,4 @@ border-style: solid;
 button{
   background-color:lightyellow;
   color:#AA26FF;
-}
-body{
-  background-color:lightyellow;
 }

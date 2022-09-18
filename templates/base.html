@@ -14,10 +14,9 @@
   </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <header >
+  <header class="cabeçario">
     <div class="float-end text-end mr-1 text-light">
-      {% if 'usuario_nome' in sension %}
-      
+      {% if 'usuario' in session %}
       <form action="{{url_for('login')}}" method="post">
         <div>Olá, {{senssion ['usuario_nome']}}!
     </div>
@@ -30,29 +29,31 @@
     </div> 
     <div class="cabecalho">
       
-      <h1  class="display-1">JOGOTECA</h1>
+      <h1  class="display-2">JOGOTECA</h1>
     </div>
    </header>
     
   <main class="container mt-3">
     <div class="page-header">
-      <h1> {{titulo}}</h1>
-      
-      
+      <h1>{{titulo}}</h1>
     </div>
-    {{%with meensagens=get_flashed_mensagens()%}}
-    {{%if mensagens}}
-    <ul class="text-danger">
-      {{%if mensagens}}
-      {{for mensagemin mensagens }}
-       <li>{{mensagem}}</li>
-      {%endfor%}
+    {% with mensagens= get_flashed_mensagens()%}
+      {%if mensagens%}
+    <ul class= "text-danger">
+      {%for mensagem in mensagens%}
       
+        <li>{{mensagem}}</li>
+      {%endfor%}
     </ul>
-  
-    {%endif%}
-    {%endwith%}
+      {% endif%}
+    {endwith}
+
     
+    <!--{%block conteudo%}
+    
+    {%endblock%}-->
+  
+  
     <ul class="nav">
       {%block menu%}
       

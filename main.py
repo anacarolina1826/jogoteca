@@ -47,6 +47,7 @@ def login():
     else:
       session['usuario_email'] = usuario.email
       session['usuario_nome'] = usuario.nome
+      return redirect(url_for('index'))
       
   return render_template('login.html')
 
@@ -55,6 +56,15 @@ def logout():
   session.pop('usuario_email', None) #sension.pop ele retira as informações que está na sensão fazendo o logout 
   session.pop('usuario_nome', None)
   return redirect(url_for('index')) 
+
+def usuario_logado():
+    return 'usuario_email' in session
+
+@app.errorhandler(403)
+def acesso_negado(erro):
+  return render_template('acesso_negado.html', titulo='Ops!'), 403
+
+
 
 #app.run coloca o sistema no ar, sendo a ultima linha do c
 app.run(host='0.0.0.0', port=81, debug=True)
