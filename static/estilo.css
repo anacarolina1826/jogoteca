@@ -1,5 +1,10 @@
 header{ 
   color:#FF6961;/*color_name: pastel read*/  
+  text-align:center;
+}
+
+.titulo h1{
+  color:purple;
 }
 
 #ta th{
@@ -8,8 +13,8 @@ header{
   /*color:#FF1205*;*/
   color:#AA26FF;
   font-size:20px;
-  
 }
+
 #ta{
   background-color:lightyellow;
   font-size:20px;

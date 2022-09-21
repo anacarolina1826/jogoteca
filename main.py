@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect,session,flash,url_for,abort
 
 class jogo:
 
@@ -16,14 +16,18 @@ app = Flask(__name__)
 app.secrety_key='ifmg'
 
 lista = [jogo1, jogo2, jogo3]
-
+#exibir a tabela com meus jogos
 @app.route('/')
 def ola():
     return render_template('lista.html',titulo='Meus Jogos', jogos=lista)
+
   
+  #rota: Exibir o formulario para cadstro de novo jogo
 @app.route('/novo')
 def novo():
   return render_template('novo.html')
+
+  
 
 @app.route('/criar', methods=['POST',])
 def criar():
@@ -35,7 +39,9 @@ def criar():
   lista.append(novo_jogo)
   
   return render_template('lista.html',titulo='Meus Jogos', jogos=lista)
+
   
+# fazer verivicação dos usuarios e senha e ver se o usuario está cadastrado na sessão ou não  
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   if request.method == 'POST':

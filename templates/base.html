@@ -18,7 +18,7 @@
     <div class="float-end text-end mr-1 text-light">
       {% if 'usuario' in session %}
       <form action="{{url_for('login')}}" method="post">
-        <div>Olá, {{senssion ['usuario_nome']}}!
+        <div>Olá, {{session ['usuario_nome']}}!
     </div>
         <button class="btn btn-link">sair</button>
       </form>
@@ -26,18 +26,15 @@
       <div> <a href="{{url_for('login')}}"> login </a> 
       </div>
       {% endif%}
-    </div> 
-    <div class="cabecalho">
-      
+    </div>   
       <h1  class="display-2">JOGOTECA</h1>
-    </div>
    </header>
     
   <main class="container mt-3">
     <div class="page-header">
-      <h1>{{titulo}}</h1>
+      <h1 class="titulo">{{titulo}}</h1>
     </div>
-    {% with mensagens= get_flashed_mensagens()%}
+    {% with mensagens= get_flashed_messages()%}
       {%if mensagens%}
     <ul class= "text-danger">
       {%for mensagem in mensagens%}
@@ -46,13 +43,9 @@
       {%endfor%}
     </ul>
       {% endif%}
-    {endwith}
+    {%endwith%}
 
     
-    <!--{%block conteudo%}
-    
-    {%endblock%}-->
-  
   
     <ul class="nav">
       {%block menu%}
@@ -72,7 +65,7 @@
    
    
 
-  <footer class="mt-auto  text-muted">
+  <footer class="mt-auto bg-light p-2 text-center">
     <section class="p-4 d-flex justify-content-center justify-content-between">
       <div class="me-5">
         <span>Conheça as nossas redes sociais:</span>
