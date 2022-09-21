@@ -9,10 +9,10 @@ header{
 
 #ta th{
   background-color:lightyellow;
+  font-weight:normal;
   /*color:#FF1205*;*/
   color:#AA26FF;
   font-size:20px;
-  font-weight:normal;
 }
 
 #ta{
@@ -34,7 +34,6 @@ a:visited{
 
 body{
   background-color:lightyellow;
-  font-weight:normal;
 }
 
 

@@ -26,18 +26,12 @@ def ola():
   #rota: Exibir o formulario para cadstro de novo jogo
 @app.route('/novo')
 def novo():
-  if not usuario_logado():
-    return 'usuario_nome' in session
-  
   return render_template('novo.html')
 
   
 
 @app.route('/criar', methods=['POST',])
 def criar():
-  if not usuario_logado():
-    abort(403)
-  
   nome = request.form['nome']
   categoria = request.form['categoria']
   console = request.form['console']
