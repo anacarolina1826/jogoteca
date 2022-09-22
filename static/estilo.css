@@ -8,18 +8,18 @@ body{
   text-align:center;
   font-weight:normal;
   background-image: linear-gradient(to right, rgba(255,179,179,1), rgba(255,179,179,0));
+  font-family:'Sofia', cursive;
 
 
-}
-.cabeçario a{
-  font-size:29px;
 }
 
 .titulo h1{
-  color:#ff6961;
+  color:#8a00e6;
   text-aling:center;
   font-weight:normal;
-  font-size: 30px;
+  font-size: 40px;
+  font-family:'Sofia', cursive;
+
   
   
 }
@@ -28,10 +28,11 @@ body{
   background-color:lightyellow;
   font-weight:normal;
   /*color:#FF1205*;*/
-  color:#8a00e6;
+  color:#ff6961;
   font-size:20px;
   border: 2px dashed black;
-  border-collapse: separate;
+  margin:auto;
+  padding:auto;
 }
 
 #ta td{
@@ -39,29 +40,33 @@ body{
   font-size:20px;
   border: 2px dashed black;
   margin:auto;
-  padding: 20px;
-  border-collapse: separate;
+  padding: auto;
+  
 }
 
 
 a:link{
   
   color:#ff8680;
-  display:block;
+  display:inline;
   text-decoration:none;
+  font-size:20px;
 
 }
 
 a:visited{
   
-  color:#AA26FF;
+  color:#8a00e6;
 }
 a:hover{
   color:#ff554d;
-  font-weight:bolder;
 }
 
-
+.cabeçario a{
+  font-size:22px;
+  position:relative;
+  right:50px;
+}
 
 
 form{
