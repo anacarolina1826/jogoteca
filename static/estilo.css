@@ -6,6 +6,7 @@ body{
   color:#8a00e6;
   text-align:center;
   font-weight:normal;
+  font-size: 25px;
   background-image: linear-gradient(to right, rgba(255,179,179,1), rgba(255,179,179,0));
 
 
@@ -15,6 +16,7 @@ body{
   color:#ff6961;
   text-aling:center;
   font-weight:normal;
+  font-size: 30px;
   
   
 }
@@ -24,15 +26,15 @@ body{
   font-weight:normal;
   /*color:#FF1205*;*/
   color:#8a00e6;
-  font-size:28px;
+  font-size:20px;
+  border: 2px dashed black;
 }
 
-#ta{
+#ta td{
   background-color:lightyellow;
   font-size:20px;
-  border: 2px double black;
+  border: 2px dashed black;
   margin:auto;
-  border-radius:20px;
   padding: 20px;
 }
 a:link{
