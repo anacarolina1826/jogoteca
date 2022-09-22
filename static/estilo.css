@@ -1,48 +1,64 @@
-header{ 
-  color:#FF6961;/*color_name: pastel read*/  
+
+body{
+  background-color:lightyellow;
+}
+.cabeçario{ 
+  color:#8a00e6;
   text-align:center;
+  font-weight:normal;
+  background-image: linear-gradient(to right, rgba(255,179,179,1), rgba(255,179,179,0));
+
+
 }
 
 .titulo h1{
-  color:purple;
+  color:#ff6961;
+  text-aling:center;
+  font-weight:normal;
+  
+  
 }
 
 #ta th{
   background-color:lightyellow;
   font-weight:normal;
   /*color:#FF1205*;*/
-  color:#AA26FF;
-  font-size:20px;
+  color:#8a00e6;
+  font-size:28px;
 }
 
 #ta{
   background-color:lightyellow;
   font-size:20px;
-  border: 2px solid lightgray;
-  border-style:d
+  border: 2px double black;
   margin:auto;
   border-radius:20px;
   padding: 20px;
 }
 a:link{
+  
   color:#ff8680;
+
 }
 
 a:visited{
+  
   color:#AA26FF;
 }
-
-body{
-  background-color:lightyellow;
+a:hover{
+  color:#ff554d;
+  font-weight:bolder;
 }
+
+
 
 
 form{
-  border: 4px solid lightgray;
+  border: 2px solid black;
   border-radius:30px;
   padding: 20px;
   width: 300px;
-  color:#AA26FF;
+  color:#8a00e6;
   font-weight:normal;
   font-size:20px;
   margin:auto;
@@ -50,12 +66,10 @@ form{
 }
 
 input{
- border:2px;
+ border:2px solid black;
  border-radius:30px;
-border-color: black;
-border-style: solid;
 }
 button{
   background-color:lightyellow;
-  color:#AA26FF;
+  color:#8a00e6;
 }
