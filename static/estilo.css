@@ -6,7 +6,8 @@ body{
   color:#8a00e6;
   text-align:center;
   font-weight:normal;
-  font-size: 25px;
+  
+
   background-image: linear-gradient(to right, rgba(255,179,179,1), rgba(255,179,179,0));
 
 
@@ -40,6 +41,8 @@ body{
 a:link{
   
   color:#ff8680;
+  display:block;
+  text-decoration:none;
 
 }
 

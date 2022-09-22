@@ -23,7 +23,8 @@
         <button class="btn btn-link">sair</button>
       </form>
       {%else%}
-      <div> <a href="{{url_for('login')}}"> login </a> 
+      <div>
+        <a href="{{url_for('login')}}"> login </a> 
       </div>
       {% endif%}
     </div>   
@@ -51,9 +52,9 @@
       {%block menu%}
       
       {%endblock%}
-      <a href="/" class="nav-link">Início</a>
-      <a href="#" class="nav-link">Sobre</a>
-      <a href="#" class="nav-link">Contato</a>
+      <a href="/" class="link">Início</a>
+      <a href="#" class="link">Sobre</a>
+      <a href="#" class="link">Contato</a>
 
     </ul>
 
