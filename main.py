@@ -1,6 +1,4 @@
-from flask import Flask, render_template, request, redirect,session,flash, url_for,abort,g
-#import usuarios
-
+from flask import Flask, render_template, request, redirect, session, flash, url_for, abort
 
 
 class Jogo:

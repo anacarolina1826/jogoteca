@@ -4,13 +4,15 @@ body{
 }
 .cabeçario{ 
   color:#8a00e6;
+  font-size: 50px;
   text-align:center;
   font-weight:normal;
-  
-
   background-image: linear-gradient(to right, rgba(255,179,179,1), rgba(255,179,179,0));
 
 
+}
+.cabeçario a{
+  font-size:29px;
 }
 
 .titulo h1{
@@ -29,6 +31,7 @@ body{
   color:#8a00e6;
   font-size:20px;
   border: 2px dashed black;
+  border-collapse: separate;
 }
 
 #ta td{
@@ -37,7 +40,10 @@ body{
   border: 2px dashed black;
   margin:auto;
   padding: 20px;
+  border-collapse: separate;
 }
+
+
 a:link{
   
   color:#ff8680;
