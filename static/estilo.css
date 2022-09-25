@@ -3,7 +3,9 @@ body{
   background-color:lightyellow;
 }
 .cabeçario{ 
-  color:#8a00e6;
+ 
+  color:#8f00ff;
+  display:block;
   font-size: 50px;
   text-align:center;
   font-weight:normal;
@@ -12,11 +14,41 @@ body{
 
 
 }
+.cabeçario a{
+  font-family: Arial, Helvetica, sans-serif;
+  display:block;
+  font-size:22px;
+  position:relative;
+  right:50px;
+  font-family:'Times New Roman', Times, serif;
+
+}
+
+
+a:link{
+  
+  color:#ff8680;
+  text-decoration:none;
+  font-size:20px;
+  margin:4px;
+ 
+
+}
+
+a:visited{
+  
+  color:#FF6347;
+}
+a:hover{
+  color:darkviolet;
+}
+
 
 .titulo h1{
-  color:#8a00e6;
+  color:rgb(255, 105, 97);
+  /*color:#FF7F50;*/
   text-aling:center;
-  font-weight:normal;
+  font-weight:200;
   font-size: 40px;
   font-family:'Sofia', cursive;
 
@@ -26,9 +58,9 @@ body{
 
 #ta th{
   background-color:lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight:normal;
-  /*color:#FF1205*;*/
-  color:#ff6961;
+  color:#8f00ff;
   font-size:20px;
   border: 2px dashed black;
   margin:auto;
@@ -38,54 +70,50 @@ body{
 #ta td{
   background-color:lightyellow;
   font-size:20px;
+  font-family:'Times New Roman', Times, serif;
   border: 2px dashed black;
   margin:auto;
   padding: auto;
   
 }
-
-
-a:link{
-  
-  color:#ff8680;
-  display:inline;
-  text-decoration:none;
-  font-size:20px;
-
+.link{
+  font-family:'Times New Roman', Times, serif;
 }
 
-a:visited{
-  
-  color:#8a00e6;
-}
-a:hover{
-  color:#ff554d;
-}
 
-.cabeçario a{
-  font-size:22px;
-  position:relative;
-  right:50px;
-}
+
+
+
 
 
 form{
-  border: 2px solid black;
+  border: 1px solid #ced4da;
   border-radius:30px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   width: 300px;
   color:#8a00e6;
   font-weight:normal;
   font-size:20px;
-  margin:auto;
-  
+  margin:auto;  
 }
 
 input{
- border:2px solid black;
+ border:1px solid #ced4da;
  border-radius:30px;
 }
-button{
+.but{
   background-color:lightyellow;
   color:#8a00e6;
+  border:1px solid #ced4da;
+  margin:8px;
 }
+
+
+
+.form{
+ border: 1px solid #ced4da;
+  border-radius:30px;
+}
+  
+

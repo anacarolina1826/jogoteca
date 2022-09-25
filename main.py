@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for, abort
 
-
 class Jogo:
     def __init__(self, nome, categoria, console):
         self.nome = nome
@@ -9,7 +8,7 @@ class Jogo:
 
 
 
-jogo1= Jogo('God of War','ação','playstation')
+jogo1= Jogo('God of War','Ação','Playstation')
 jogo2= Jogo('CS:GO','Tiro','PC')
 lista = [jogo1, jogo2]
 
@@ -29,6 +28,7 @@ def ola():
 def novo():
   if not usuario_logado():
     abort(403)
+
   return render_template('novo.html')
 
   

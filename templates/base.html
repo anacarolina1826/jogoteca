@@ -32,7 +32,8 @@
       </form>
       {%else%}
       <div>
-        <a href="{{url_for('login')}}"> login </a> 
+        <a href="{{url_for('login')}}"> login </a>
+    
       </div>
       {% endif%}
     </div>   
@@ -61,10 +62,7 @@
       
       {%endblock%}
       
-      <a href="/" class="link">Início</a>
-      <a href="#" class="link">Sobre</a>
-      <a href="#" class="link">Contato</a>
-
+      <a href="/novo" class="link">novo jogo</a>
     </ul>
 
     {% block conteudo %}
