@@ -43,6 +43,9 @@ a:hover{
   color:darkviolet;
 }
 
+.link{
+  font-family:'Times New Roman', Times, serif;
+}
 
 .titulo h1{
   color:rgb(255, 105, 97);
@@ -76,9 +79,7 @@ a:hover{
   padding: auto;
   
 }
-.link{
-  font-family:'Times New Roman', Times, serif;
-}
+
 
 
 
@@ -87,7 +88,7 @@ a:hover{
 
 
 form{
-  border: 1px solid #ced4da;
+  /*border: 1px solid #ced4da;*/
   border-radius:30px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
@@ -98,10 +99,16 @@ form{
   margin:auto;  
 }
 
+
+  
+
+
 input{
  border:1px solid #ced4da;
  border-radius:30px;
 }
+
+/*clase para o botão do formulario de login*/
 .but{
   background-color:lightyellow;
   color:#8a00e6;
@@ -110,10 +117,4 @@ input{
 }
 
 
-
-.form{
- border: 1px solid #ced4da;
-  border-radius:30px;
-}
-  
 
