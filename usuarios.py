@@ -1,8 +1,9 @@
 class Usuario:
-  Def _init_(self, nome, email, senha)
-    self.nome = Nome
+  def __init__(self, nome, email, senha):
+    self.nome = nome
     self.email = email
     self.senha = senha
+    
 lista_usuarios = [
   Usuario('Daniel', 'daniel@gmail.com', '123'),
   Usuario('Natasha', 'natasha@gmail.com', 'abc')

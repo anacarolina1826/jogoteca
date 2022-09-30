@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for, abort
-#import usuarios
+import usuarios
 
 class Jogo:
     def __init__(self, nome, categoria, console):
@@ -15,12 +15,12 @@ lista = [jogo1, jogo2]
 
 
 app = Flask(__name__)
-app.secrety_key='ifmg'
+app.secret_key='ifmg'
 
 
 #exibir a tabela com meus jogos
 @app.route('/')
-def ola():
+def index():
     return render_template('lista.html',titulo='Meus Jogos', jogos=lista)
 
   
@@ -78,11 +78,5 @@ def logout():
 def usuario_logado():
     return 'usuario_email' in session
 
-@app.errorhandler(403)
-def acesso_negado(erro):
-  return render_template('acesso_negado.html', titulo='Ops!'), 403
-
-
-
-#app.run coloca o sistema no ar, sendo a ultima linha do c
+#app.run coloca o sistema no ar, sendo a ultima linha do cod
 app.run(host='0.0.0.0', port=81, debug=True)
