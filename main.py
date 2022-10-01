@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for, abort
+
 import usuarios
 
 class Jogo:
@@ -72,11 +73,19 @@ def logout():
   session.pop('usuario_nome', None)
   return redirect(url_for('index')) 
 
+
+
   
-#proteger a rota da pagina novo.html para que apenas usuarios credeciados(logados) acessem a pagina para criar novos jogos
 #a função abaixo verfica se usuario está logado.
 def usuario_logado():
     return 'usuario_email' in session
+
+
+@app.errorhandler(403)
+def acesso_negado(erro):
+  return render_template('acesso_negado.html', titulo='Ops!'), 403
+
+
 
 #app.run coloca o sistema no ar, sendo a ultima linha do cod
 app.run(host='0.0.0.0', port=81, debug=True)

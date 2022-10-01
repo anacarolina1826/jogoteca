@@ -6,7 +6,8 @@ class Usuario:
     
 lista_usuarios = [
   Usuario('Daniel', 'daniel@gmail.com', '123'),
-  Usuario('Natasha', 'natasha@gmail.com', 'abc')
+  Usuario('Natasha', 'natasha@gmail.com', 'abc'),
+  Usuario('Ana Carolina', 'anacarolina@gmail.com', '2603'),
 ]
 
 dict_usuarios = {
@@ -19,3 +20,6 @@ def buscar(email, senha):
     return usuario
   else:
     return None
+
+def buscar_por_email(email):
+  return dict_usuarios.get(email, None)
