@@ -10,7 +10,7 @@ class jogo:
 jogo1= jogo('God of War','ação','playstation')
 jogo2=jogo('CS:GO','Tiro','PC')
 jogo3=jogo('Minecraft', 'construção','PC')
-jogo4=jogo('chatlinx',RPG,Android)
+jogo4=jogo('chatlinx','RPG','Android')
 
 
 app = Flask(__name__)
