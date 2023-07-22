@@ -15,7 +15,7 @@ jogo4=jogo('Chatlinx','RPG','Android')
 
 app = Flask(__name__)
 
-lista = [jogo1, jogo2, jogo3]
+lista = [jogo1, jogo2, jogo3,jogo4]
 
 @app.route('/inicio')
 def ola():
